@@ -1,0 +1,5 @@
+git clone - download
+git status - status update
+git add - add local
+git commit - lock it
+git push - server sync/upload
