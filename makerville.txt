@@ -1,0 +1,29 @@
+#include <stdio.h>
+//#include <conio.h>
+int main()
+{
+    unsigned long int ip;
+    unsigned long int a = 0 ,b = 1 ,c;
+    unsigned long int up , down;
+    printf("Enter Number : ");
+    scanf("%lu", &ip);
+    printf("Entered Number : %lu",ip);
+    
+    while(1)
+    {
+        c = a + b;
+        a = b;
+        b = c;
+        if(c >= ip)
+        {break;}
+    }
+    up = b;
+    down = a;
+    printf("\nUp: %lu",up);
+    printf("\nDown is: %lu",down);
+    if( (ip - down)<(up - ip) )
+    {printf("\nNearest Number is: %lu",down);}
+    else if ( (up-ip)<(ip-down) )
+    {printf("\nNearest Number is: %lu",up);}
+    return 0;
+}
